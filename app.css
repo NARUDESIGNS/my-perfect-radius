@@ -12,15 +12,20 @@
 }
 
 .box {
-    width: 200px;
+    width: 300px;
     height: 200px;
     background-color: rgb(250, 192, 33);
     margin: 30px auto;
-    transition: 1s ease;
-    -webkit-transition: 1s ease;
-    -moz-transition: 1s ease;
-    -ms-transition: 1s ease;
-    -o-transition: 1s ease;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    -webkit-border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    -moz-border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    -ms-border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+    -o-border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
 }
 
 .controls {
@@ -78,7 +83,7 @@
 }
 
 p {
-    margin: 20px 0;
+    margin: 20px 3%;
 }
 
 button {
