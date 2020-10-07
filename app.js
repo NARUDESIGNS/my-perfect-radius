@@ -15,7 +15,7 @@ const copyBtn = document.getElementById("copy-btn");
 
 //generate border radius values
 function generateRadiusValues(){
-    borderRadius = `${xTLSlider.value}% ${xTRSlider.value}% ${xBRSlider.value}% ${xBLSlider.value}% / ${yTLSlider.value}% ${yTRSlider.value}% ${yBRSlider.value}% ${yBLSlider.value}%`;
+    borderRadius = `${xTLSlider.value}% ${xTRSlider.value}% ${xBRSlider.value}% ${xBLSlider.value}% / ${yTLSlider.value}% ${yTRSlider.value}% ${yBRSlider.value}% ${yBLSlider.value}%;`;
     console.log(borderRadius);
     box.style.borderRadius = borderRadius;
     radiusValue.innerText = `border-radius: ${borderRadius}`;
@@ -31,7 +31,7 @@ for(let i = 0; i < sliders.length; i++){
 copyBtn.addEventListener('click', () => {
     copyBtn.innerText = 'Copied';
     //copy border-radius values
-    navigator.clipboard.writeText(radiusValue.innerText.replace('border-radius: ', ""));
+    navigator.clipboard.writeText(radiusValue.innerText);
     setTimeout(() => {
         copyBtn.innerText = 'Copy';
     }, 4000);
